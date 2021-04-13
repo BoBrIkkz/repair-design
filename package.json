@@ -9,6 +9,7 @@
   "author": "Arseny",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2"
   },
