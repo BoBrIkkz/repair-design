@@ -11,5 +11,8 @@
   "dependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.1.0"
   }
 }
