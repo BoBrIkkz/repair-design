@@ -395,8 +395,48 @@ template {
   margin-right: 45px;
 }
 
+.hero {
+  position: relative;
+  background: #131313 url(../img/hero-bg.jpg) center/cover no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.hero__instagram {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 80px;
+  height: 100%;
+}
+
+.instagram {
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.instagram__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E3B873;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.tittle {
+  margin: 0;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
