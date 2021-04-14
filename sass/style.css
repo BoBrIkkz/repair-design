@@ -353,9 +353,40 @@ template {
   color: white;
 }
 
+.button--outline {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto;
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: "Futura Demi";
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../fonts/Yeseva/YesevaOne-Regular.woff") format("woff"), url("../fonts/Yeseva/YesevaOne-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
 }
 
 .header {
@@ -402,6 +433,13 @@ template {
 
 .hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 100px;
   background: #131313 url(../img/hero-bg.jpg) center/cover no-repeat;
   height: 100vh;
@@ -414,6 +452,40 @@ template {
   top: 0;
   max-width: 80px;
   height: 100%;
+}
+
+.hero__scroll-down {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  bottom: 0;
+  min-width: 247px;
+  min-height: 97px;
+  background-color: #131313;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 12px;
+  line-height: 138.6%;
+}
+
+.hero__text {
+  max-width: 504px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.hero__button {
+  margin-right: 20px;
 }
 
 .instagram {
@@ -438,7 +510,16 @@ template {
 }
 
 .tittle {
+  max-width: 670px;
   margin: 0;
+  font-family: 'Yeseva One', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+.tittle--primary {
+  color: #E3B873;
 }
 
 *, *:before, *:after {
