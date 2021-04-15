@@ -452,13 +452,16 @@ body {
     margin-right: 1rem;
   }
   html .nav__item {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   html .hero {
-    padding-top: 60px;
+    padding-top: 5rem;
+  }
+  html .hero::after {
+    display: none;
   }
   html .hero__scroll-down {
     display: none;
@@ -476,6 +479,22 @@ body {
   }
   .menu__logo {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html .hero__text {
+    font-size: 1.29rem;
+    max-width: 300px;
+  }
+  html .hero__button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.85rem;
+    margin-right: 0px;
+  }
+  html .tittle {
+    font-size: 1.64rem;
   }
 }
 
@@ -536,7 +555,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 84px;
+  padding-top: 6rem;
   height: 100vh;
   color: white;
 }
@@ -569,8 +588,8 @@ body {
           align-items: center;
   left: 0;
   bottom: 0;
-  min-width: 247px;
-  min-height: 97px;
+  min-width: 17.6rem;
+  min-height: 6.92rem;
   background-color: #131313;
   text-transform: uppercase;
   color: white;

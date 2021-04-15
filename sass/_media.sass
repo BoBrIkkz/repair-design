@@ -16,11 +16,13 @@
         margin-right: 1rem
     .nav
       &__item
-        margin-right: 1rem
+        margin-right: 2rem
 @media screen and ( max-width: 768px )
   html
     .hero
-      padding-top: 60px
+      padding-top: 5rem
+      &::after
+        display: none
       &__scroll-down
         display: none
       &__instagram
@@ -38,4 +40,14 @@
 @media screen and ( max-width: 576px )
   html
     .hero
-      &
+      &__text
+        font-size: 1.29rem
+        max-width: 300px
+      &__button
+        display: block
+        width: 100%
+        margin-bottom: 1.85rem
+        margin-right: 0px
+
+    .tittle
+      font-size: 1.64rem
