@@ -483,6 +483,13 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  html .hero__content {
+    padding-left: 0;
+  }
+  html .hero__main {
+    left: 10%;
+    right: 10%;
+  }
   html .hero__text {
     font-size: 1.29rem;
     max-width: 300px;
@@ -490,6 +497,7 @@ body {
   html .hero__button {
     display: block;
     width: 100%;
+    max-width: 300px;
     margin-bottom: 1.85rem;
     margin-right: 0px;
   }
@@ -546,6 +554,11 @@ body {
   color: #E3B873;
 }
 
+.contacts__button {
+  width: 161px;
+  height: 37px;
+}
+
 .contacts__phone {
   margin-right: 1.95rem;
 }
@@ -571,6 +584,7 @@ body {
 }
 
 .hero__instagram {
+  font-size: 1.1rem;
   max-width: 80px;
   height: 100%;
 }
@@ -614,6 +628,7 @@ body {
   position: relative;
   max-width: 504px;
   font-size: 1.57rem;
+  line-height: 130%;
 }
 
 .hero__button {
@@ -696,6 +711,7 @@ body {
   text-transform: uppercase;
   font-size: 2.857rem;
   max-width: 43rem;
+  line-height: 1.4;
 }
 
 .tittle--primary {
