@@ -487,6 +487,7 @@ body {
     padding-left: 0;
   }
   html .hero__main {
+    top: 10%;
     left: 10%;
     right: 10%;
   }
