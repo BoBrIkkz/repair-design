@@ -8,11 +8,36 @@ body
 img
   max-width: 100%
 .section
+  &--dark
+    background: $dark
+    color: white
   &-tittle
     padding: 100px 0
     text-align: center
     text-transform: uppercase
     font-family: 'Yeseva One', sans-serif
+    &__text
+      font-size: 1.28rem
+      line-height: 1.07rem
+      max-width: 31.57rem
+      font-family: "Futura Book", sans-serif
+      text-transform: none
+      text-align: left
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 90px
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
+    &--left
+      text-align: left
+    &__heading
+      line-height: 138%
+      &--primary
+        color: $primary
     &__image
       &::before, &::after
         content: ''

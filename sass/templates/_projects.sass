@@ -1,0 +1,31 @@
+.swiper
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 50px
+    margin-left: 1px
+    &__text
+      flex-basis: 50%
+    &__heading
+      font-size: 1.285rem
+      line-height: 1.78rem
+      font-family: 'Yeseva One', sans-serif
+      color: $primary
+      text-transform: uppercase
+    &__value
+  &-pagination
+    &-bullet
+      background-color: rgba(white, 0.3)
+      &:active
+        background-color: white
+  &-button
+    &-prev, &-next
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      background: url('../img/arrow-left.svg') no-repeat
+    &-next
+      background: url('../img/arrow-right.png') no-repeat center
