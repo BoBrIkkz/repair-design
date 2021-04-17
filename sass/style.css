@@ -896,18 +896,25 @@ img {
   text-transform: uppercase;
 }
 
+.swiper-pagination-bullets {
+  width: auto !important;
+  bottom: 0 !important;
+}
+
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: white !important;
 }
 
 .swiper-pagination-bullet:active {
-  background-color: white;
+  background-color: white !important;
 }
 
 .swiper-button-prev, .swiper-button-next {
-  background-size: 42px;
-  width: 42px;
-  height: 14px;
+  bottom: 0 !important;
+  top: auto !important;
+  background-size: 42px !important;
+  width: 42px !important;
+  height: 14px !important;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -915,11 +922,12 @@ img {
 }
 
 .swiper-button-prev {
-  background: url("../img/arrow-left.svg") no-repeat;
+  left: 0 !important;
+  background: url("../img/arrow-prev.svg") no-repeat;
 }
 
 .swiper-button-next {
-  background: url("../img/arrow-right.png") no-repeat center;
+  background: url("../img/arrow-next.svg") no-repeat;
 }
 
 .types__section-tittle {
