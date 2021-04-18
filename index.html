@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="sass/style.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="sass/style.css">
   <title>Repair Design Studio</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
 
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
-        <nav class="nav menu__nav">
+        <div class="logo menu__logo wow animate__animated animate__fadeInDown">Repair Design Project</div>
+        <nav class="nav menu__nav wow animate__animated animate__fadeInDown" data-wow-delay="0.5s">
           <a href="#" class="nav__item">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
           <a href="#" class="nav__item">Замер</a>
@@ -23,7 +24,7 @@
           <a href="#" class="nav__item">Отзывы</a>
           <a href="#" class="nav__item">Контакты</a>
         </nav>
-        <div class="contacts menu__contacts">
+        <div class="contacts menu__contacts wow animate__animated animate__fadeInDown" data-wow-delay="1s">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
           <button class="button contacts__button button--primary">Заказать звонок</button>
         </div>
@@ -193,11 +194,11 @@
               <form action="#" class="form control__form">
                 <div class="control__input-group">
                   <label for="user-name" class="label form__label control__label">Имя</label>
-                  <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+                  <input type="text" class="input form__input control__input" id="user-name1" placeholder="Как вас зовут:">
                 </div>
                 <div class="control__input-group">
                 <label for="user-phone" class="label form__label control__label">Телефон</label>
-                <input type="text" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+                <input type="text" class="input form__input control__input" id="user-phone1" placeholder="Ваш номер телефона:">
                 </div>
                 <button class="button button--primary control__button">Отправить</button>
               </form>
@@ -446,6 +447,7 @@
   <!-- /.modal -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
