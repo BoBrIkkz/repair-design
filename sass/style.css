@@ -649,6 +649,30 @@ img {
   html .tittle {
     font-size: 1.64rem;
   }
+  html .control__button {
+    width: 100%;
+  }
+  html .control__video {
+    background: url("../img/control/video-mask-small.jpg") center no-repeat;
+    width: 340px;
+    min-height: 1px;
+    height: 207px;
+  }
+  html .control__policy {
+    margin-top: -11rem;
+  }
+  html .control__policy--label {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  html .control__input {
+    margin-bottom: 9rem;
+    width: 100%;
+  }
+  html .control__form {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {
