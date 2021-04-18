@@ -31,6 +31,11 @@ $(document).ready(function () {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+
+
+
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');

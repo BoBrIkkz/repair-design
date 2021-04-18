@@ -613,6 +613,12 @@ img {
   .menu__logo {
     max-width: 100%;
   }
+  .col-50 {
+    width: 100%;
+  }
+  .swiper-slide--img {
+    margin-top: 35px !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -881,6 +887,11 @@ img {
       flex-wrap: wrap;
   margin-bottom: 50px;
   margin-left: 1px;
+}
+
+.swiper-slide--img {
+  margin-top: 100px;
+  width: 99%;
 }
 
 .swiper-slide__text {
