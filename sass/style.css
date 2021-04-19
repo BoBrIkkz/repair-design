@@ -424,6 +424,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.142rem;
 }
 
 .policy__label::before {
@@ -434,6 +435,12 @@ template {
   border-radius: 1px;
   margin-right: 0.64rem;
   cursor: pointer;
+}
+
+.policy__label--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
@@ -667,7 +674,11 @@ img {
         -ms-flex-pack: start;
             justify-content: start;
   }
-  html .control__input {
+  html .control__input--name {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  html .control__input--last-name {
     margin-bottom: 9rem;
     width: 100%;
   }
@@ -737,6 +748,10 @@ img {
   content: '';
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #E3B873;
+}
+
+.nav__item--primary {
   color: #E3B873;
 }
 
@@ -1127,6 +1142,10 @@ img {
           box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
+.design {
+  margin-bottom: 5rem;
+}
+
 .design__text {
   margin: 0 auto;
   text-align: center;
@@ -1136,6 +1155,74 @@ img {
   font-family: 'Futura Book';
   font-size: 1.42rem;
   text-transform: none;
+}
+
+.footer {
+  background: #363636 url("../img/footer-bg.jpg") no-repeat bottom/cover;
+}
+
+.footer-wrap {
+  background: #181818 url("../img/bg-lines.svg") no-repeat bottom/cover;
+  max-width: 63.07rem;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.footer__tittle {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', sans-serif;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-bottom: 3.214rem;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 37.142rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.footer__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-bottom: 3.5rem;
+}
+
+.footer__input-group--full {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.footer__button {
+  margin: auto;
+  margin-top: 3.5rem;
+  padding: 1.285rem 4.785rem;
+}
+
+.footer__menu {
+  background-color: #181818;
+  padding: 4.285rem 0;
 }
 
 .modal {
