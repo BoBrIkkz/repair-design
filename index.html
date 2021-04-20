@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +56,7 @@
 
     </section>
     <!-- /.hero -->
-        <section class="section section--dark projects">
+      <section class="section section--dark projects">
           <div class="container">
             <div class="row">
               <div class="col-50">
@@ -420,7 +420,61 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section control -->
+    <!-- /.section design -->
+    <section class="section team">
+    <div class="container">
+      <div class="section-tittle design__section-tittle">
+        <h2 class="section-tittle__heading">Наша команда</h2>
+        <!-- /.section-tittle__heading -->
+        <div class="section-tittle__image">
+          <img src="img/team.svg" alt="team">
+        </div>
+        <!-- /.section-tittle__image -->
+      </div>
+              <p class="team__text">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+      <!-- /.section-tittle -->
+      <div class="row">
+              <div class="col-32 team__card">
+                <div class="team__card__logo team__card__logo-manager"></div>
+                <img src="img/team/manager.jpg" alt="manager">
+                <div class="team__card-text">
+                  <h2 class="team__card-tittle">Алексей Колмаков</h2>
+                  <span class="team__card-item">Проектный менеджер</span>
+                  <strong class="team__card-time">Опыт работы 8 лет</strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <div class="col-32 team__card">
+                <div class="team__card__logo team__card__logo-designer"></div>
+                <img src="img/team/designer.jpg" alt="designer">
+                <div class="team__card-text">
+                  <h2 class="team__card-tittle">Алиса Сухорукова</h2>
+                  <span class="team__card-item">Дизайнер</span>
+                  <strong class="team__card-time">Опыт работы 6 лет</strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <div class="col-32 team__card">
+                <div class="team__card__logo team__card__logo-foreman"></div>
+                <img src="img/team/foreman.jpg" alt="foreman">
+                <div class="team__card-text">
+                  <h2 class="team__card-tittle">Давид Волынев</h2>
+                  <span class="team__card-item">Бригадир</span>
+                  <strong class="team__card-time">Опыт работы 7 лет</strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+      </div>
+      <!-- /.row -->
+
+      <p class="team__text team__text-second">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
+      <!-- /.team__text -->
+
+
+    </div>
+    <!-- /.container -->
+    </section>
+    <!-- /.section team -->
   </main>
 
 <footer class="footer section section--dark">
@@ -454,6 +508,22 @@
               <button class="button button--primary footer__button">Отправить</button>
             </form>
     </div>
+      <div class="section-tittle footer__section-tittle">
+            <h2 class="section-tittle__heading footer__section-tittle__heading section-tittle__heading--primary">Ростов на дону Торговый центр Plaza Прямой телефон<a href="tel:+79997683299" class="section-tittle__heading--tel"> +7&nbsp;(999)&nbsp;768&nbsp;32&nbsp;99</a></h2>
+      </div>
+      <!-- /.section-tittle footer__section-tittle -->
+
+      <div class="footer__icons">
+        <div class="footer__icons--mail">
+          <a href="" ></a>
+        </div>
+        <div class="footer__icons--insta">
+          <a href=""></a>
+        </div>
+      </div>
+      <!-- /.footer__icons -->
+
+      <div class="map footer__map" id="map"></div>
   </div>
   <div class="footer__menu">
     <div class="container">
@@ -517,6 +587,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d1829b61-d53b-466f-9ca7-9b44a9039ede&lang=ru_RU" type="text/javascript"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

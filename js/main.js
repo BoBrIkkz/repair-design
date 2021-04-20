@@ -55,6 +55,7 @@ $(document).ready(function () {
     },
     modalUserPhone: {
       required: true,
+      minlength: 10
     },
     modalUserEmail: {
       required: true,
@@ -68,7 +69,8 @@ $(document).ready(function () {
       maxlength: "Имя не должно быть таким длинным"
     },
     modalUserPhone: {
-      required: "Заполните поле"
+      required: "Заполните поле",
+      minlength: "Заполните номер полностью"
     },
     modalUserEmail: {
       required: "Заполните поле",
@@ -79,5 +81,35 @@ $(document).ready(function () {
 
   // Маски
   $('[type=tel]').mask("+7 (000) 000-00-00", {placeholder: "+7 (999) 888-77-66"});
+
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [47.244716, 39.723186],
+            zoom: 18
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Наш офис'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/map-marker.png',
+            // Размеры метки.
+            iconImageSize: [24, 24]
+
+        })
+    myMap.geoObjects
+        .add(myPlacemark);
+});
 
 });

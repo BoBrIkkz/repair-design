@@ -575,6 +575,12 @@ img {
   color: #E3B873;
 }
 
+.section-tittle__heading--tel {
+  text-decoration: none;
+  outline: none;
+  color: #E3B873;
+}
+
 .section-tittle__image::before, .section-tittle__image::after {
   content: '';
   display: inline-block;
@@ -692,6 +698,21 @@ img {
   }
   html .control__form {
     display: block;
+  }
+  html .design__card {
+    margin-bottom: 150px;
+  }
+  html .design__card:last-child {
+    margin-bottom: 0px;
+  }
+  html .team__card {
+    margin-bottom: 150px;
+  }
+  html .team__text:last-child {
+    display: none;
+  }
+  html .footer__map {
+    max-height: 255px;
   }
 }
 
@@ -1164,10 +1185,123 @@ img {
   font-family: 'Futura Book';
   font-size: 1.42rem;
   text-transform: none;
+  margin-bottom: 40px;
+}
+
+.team__text {
+  max-width: 32rem;
+  margin: auto;
+  margin-bottom: 74px;
+  margin-top: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.428rem;
+  line-height: 2.428rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.team__text-second {
+  margin-top: 110px;
+  max-width: 40.6rem;
+  text-align: center;
+}
+
+.team__text-second::before {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  border-radius: 30px;
+  margin-bottom: 1.15rem;
+}
+
+.team__card {
+  max-width: 273px;
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__card-tittle {
+  font-family: Yeseva One, sans-serif;
+  font-weight: normal;
+  font-size: 1.42rem;
+  line-height: 1.78rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.57rem;
+}
+
+.team__card-item {
+  color: #959595;
+  font-size: 1.285rem;
+  line-height: 2rem;
+  margin-bottom: 24px;
+}
+
+.team__card-time {
+  font-family: Yeseva One, sans-serif;
+  font-size: 1rem;
+  line-height: 1.43rem;
+  font-weight: normal;
+  background-color: #E3B873;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+
+.team__card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  width: 16.65rem;
+  height: 9.79rem;
+  max-height: 9.79rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: -44px;
+}
+
+.team__card__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -35px;
+  margin-left: -35px;
+  width: 5rem;
+  height: 5rem;
+}
+
+.team__card__logo-manager {
+  background: #E3B873 url("../img/team/manager-icon.svg") no-repeat center;
+}
+
+.team__card__logo-designer {
+  background: #E3B873 url("../img/team/designer-icon.svg") no-repeat center;
+}
+
+.team__card__logo-foreman {
+  background: #E3B873 url("../img/team/foreman-icon.svg") no-repeat center;
 }
 
 .footer {
-  background: #363636 url("../img/footer-bg.jpg") no-repeat bottom/cover;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11%, rgba(24, 24, 24, 0.9)), color-stop(33%, rgba(24, 24, 24, 0.72))), url("../img/footer-bg.jpg") no-repeat bottom/cover;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 11%, rgba(24, 24, 24, 0.72) 33%), url("../img/footer-bg.jpg") no-repeat bottom/cover;
 }
 
 .footer-wrap {
@@ -1232,6 +1366,56 @@ img {
 .footer__menu {
   background-color: #181818;
   padding: 4.285rem 0;
+  margin-top: 60px;
+}
+
+.footer__map {
+  margin: auto;
+  width: 925px;
+  height: 425px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.footer__icons--mail {
+  background: #E3B873 url(../img/mail.svg) no-repeat center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.footer__icons--insta {
+  background: #E3B873 url(../img/instagram.svg) no-repeat center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.footer__section-tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__section-tittle__heading {
+  max-width: 41rem;
+  font-size: 1.42rem;
+  line-height: 2rem;
 }
 
 .modal {

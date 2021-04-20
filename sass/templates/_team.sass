@@ -1,0 +1,78 @@
+.team
+  &__text
+    max-width: 32rem
+    margin: auto
+    margin-bottom: 74px
+    margin-top: 23px
+    justify-content: center
+    font-size: 1.428rem
+    line-height: 2.428rem
+    font-weight: normal
+    text-align: center
+    &-second
+      margin-top: 110px
+      max-width: 40.6rem
+      text-align: center
+      &::before
+        content: ''
+        display: block
+        margin: auto
+        width: 55px
+        height: 2px
+        background-color: $primary
+        border-radius: 30px
+        margin-bottom: 1.15rem
+  &__card
+    max-width: 273px
+    margin: auto
+    position: relative
+    display: flex
+    justify-content: center
+    &-tittle
+      font-family: Yeseva One, sans-serif
+      font-weight: normal
+      font-size: 1.42rem
+      line-height: 1.78rem
+      margin-bottom: 0.5rem
+      margin-top: 1.57rem
+    &-item
+      color: $secondary
+      font-size: 1.285rem
+      line-height: 2rem
+      margin-bottom: 24px
+    &-time
+      font-family: Yeseva One, sans-serif
+      font-size: 1rem
+      line-height: 1.43rem
+      font-weight: normal
+      background-color: $primary
+      color: white
+      text-transform: uppercase
+      padding: 1rem 2rem
+
+    &-text
+      display: flex
+      position: absolute
+      text-align: center
+      background: #FFFFFF
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05)
+      width: 16.65rem
+      height: 9.79rem
+      max-height: 9.79rem
+      flex-direction: column
+      bottom: -44px
+
+    &__logo
+      position: absolute
+      top: 0
+      left: 0
+      margin-top: -35px
+      margin-left: -35px
+      width: 5rem
+      height: 5rem
+      &-manager
+        background: $primary url('../img/team/manager-icon.svg') no-repeat center
+      &-designer
+        background: $primary url('../img/team/designer-icon.svg') no-repeat center
+      &-foreman
+        background: $primary url('../img/team/foreman-icon.svg') no-repeat center

@@ -1,5 +1,5 @@
 .footer
-  background: $grey url('../img/footer-bg.jpg') no-repeat bottom / cover
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 11%, rgba(24, 24, 24, 0.72) 33%), url('../img/footer-bg.jpg') no-repeat bottom / cover
   &-wrap
     background: $black url('../img/bg-lines.svg') no-repeat bottom / cover
     max-width: 63.07rem
@@ -35,3 +35,34 @@
   &__menu
     background-color: $black
     padding: 4.285rem 0
+    margin-top: 60px
+  &__map
+    margin: auto
+    width: 925px
+    height: 425px
+    max-width: 100%
+    text-align: center
+  &__icons
+    display: flex
+    justify-content: center
+    margin-top: 25px
+    margin-bottom: 40px
+    &--mail
+      background: $primary url(../img/mail.svg) no-repeat center
+      border-radius: 50%
+      width: 30px
+      height: 30px
+      margin-right: 15px
+    &--insta
+      background: $primary url(../img/instagram.svg) no-repeat center
+      border-radius: 50%
+      width: 30px
+      height: 30px
+
+  &__section-tittle
+    display: flex
+    justify-content: center
+    &__heading
+      max-width: 41rem
+      font-size: 1.42rem
+      line-height: 2rem
