@@ -443,6 +443,14 @@ template {
           justify-content: center;
 }
 
+label.invalid {
+  color: tomato;
+}
+
+input.invalid {
+  border-bottom: 1px solid tomato;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -975,6 +983,7 @@ img {
   background-size: 42px !important;
   width: 42px !important;
   height: 14px !important;
+  outline: none !important;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -1292,7 +1301,14 @@ img {
           flex-direction: column;
 }
 
-.modal__input {
+.modal__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 3.428rem;
 }
 

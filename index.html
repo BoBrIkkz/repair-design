@@ -26,7 +26,7 @@
         </nav>
         <div class="contacts menu__contacts" data-wow-delay="1s">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts__button button--primary">Заказать звонок</button>
+          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
       <!-- /.menu -->
@@ -41,12 +41,12 @@
 
     <div class="hero__content">
       <div class="hero__main">
-                <h1 class="tittle hero__tittle">Турецкий ремонт<br> в&nbsp;<span class="tittle--primary">Ростове-на-дону</span></h1>
-                <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости
+                <h1 class="tittle hero__tittle wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">Турецкий ремонт<br> в&nbsp;<span class="tittle--primary">Ростове-на-дону</span></h1>
+                <p class="hero__text wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости
                   материалов за счет организации работы</p>
                 <div class="hero__buttons">
-                  <button class="button hero__button button--primary">Рассчитать стоимость</button>
-                  <button class="button hero__button button--outline">Отправить заявку</button>
+                  <button class="button hero__button button--primary wow animate__animated animate__fadeInRight" data-wow-delay="0.9s">Рассчитать стоимость</button>
+                  <button class="button hero__button button--outline wow animate__animated animate__fadeInRight" data-wow-delay="0.9s">Отправить заявку</button>
                 </div>
       </div>
 
@@ -194,11 +194,11 @@
               <form action="#" class="form control__form">
                 <div class="control__input-group">
                   <label for="user-name" class="label form__label control__label">Имя</label>
-                  <input type="text" class="input form__input control__input control__input--name" id="user-name1" placeholder="Как вас зовут:">
+                  <input type="text" name="UserName" class="input form__input control__input control__input--name" id="user-name1" placeholder="Как вас зовут:">
                 </div>
                 <div class="control__input-group">
                 <label for="user-phone" class="label form__label control__label">Телефон</label>
-                <input type="text" class="input form__input control__input control__input--last-name" id="user-phone1" placeholder="Ваш номер телефона:">
+                <input type="tel" name="UserPhone" class="input form__input control__input control__input--last-name" id="user-phone1" placeholder="Ваш номер телефона:">
                 </div>
                 <button class="button button--primary control__button">Отправить</button>
               </form>
@@ -435,7 +435,7 @@
               <!-- /.input-group footer__input-group -->
               <div class="input-group footer__input-group">
               <label for="user-phone" class="label form__label label--light">Телефон</label>
-              <input type="text" class="input form__input footer__input input--light" id="user-phone"
+              <input type="tel" class="input form__input footer__input input--light" id="user-phone"
                 placeholder="Ваш номер телефона:">
               </div>
               <!-- /.input-group footer__input-group -->
@@ -482,12 +482,24 @@
       <button class="modal__close"></button>
       <h3 class="modal__tittle">Оставьте заявку и наш менеджер свяжется с вами</h3>
       <form action="#" class="form modal__form">
-        <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
-        <label for="user-phone" class="label form__label label--light">Телефон</label>
-        <input type="text" class="input form__input modal__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
-        <label for="user-email" class="label form__label label--light">Email</label>
-        <input type="email" class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
+        <div class="input-group modal__input-group">
+          <label for="modalUserName" class="label form__label label--light">Имя</label>
+          <input type="text" name="modalUserName" class="input form__input modal__input input--light" id="modalUserName" placeholder="Как вас зовут:">
+
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group">
+          <label for="modalUserPhoneId" class="label form__label label--light">Телефон</label>
+          <input type="tel" name="modalUserPhone" class="input form__input modal__input input--light" id="modalUserPhoneId" placeholder="Ваш номер телефона:">
+
+        </div>
+        <!-- /.input-group modal__input-group -->
+        <div class="input-group modal__input-group">
+          <label for="modalUserEmail" class="label form__label label--light">Email</label>
+          <input type="UserEmail" name="modalUserEmail" class="input form__input modal__input input--light" id="modalUserEmail" placeholder="Ваш email:">
+
+        </div>
+        <!-- /.input-group modal__input-group -->
         <div class="policy modal__policy">
           <input type="checkbox" class="policy__checkbox" name="policy-checkbox" id="policy-checkbox--modal">
           <label for="policy-checkbox--modal" class="policy__label">Я соглашаюсь с обработкой данных</label>
@@ -503,6 +515,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
