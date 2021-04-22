@@ -522,7 +522,7 @@ img {
 }
 
 .section--dark {
-  background: #131313;
+  background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
   color: white;
 }
 
@@ -633,6 +633,12 @@ img {
     text-decoration: none;
     color: white;
   }
+  html .team__card {
+    margin-bottom: 150px;
+  }
+  html .team__text:last-child {
+    display: none;
+  }
   .nav__item {
     display: none;
   }
@@ -705,14 +711,8 @@ img {
   html .design__card:last-child {
     margin-bottom: 0px;
   }
-  html .team__card {
-    margin-bottom: 150px;
-  }
-  html .team__text:last-child {
-    display: none;
-  }
   html .footer__map {
-    max-height: 255px;
+    max-height: 300px;
   }
 }
 
@@ -808,16 +808,6 @@ img {
   color: white;
 }
 
-.hero::after {
-  content: '';
-  width: 100%;
-  height: 3.46rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #131313;
-}
-
 .hero__instagram {
   font-size: 1.1rem;
   max-width: 80px;
@@ -836,7 +826,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   left: 0;
-  bottom: 0;
+  bottom: -30px;
   min-width: 17.6rem;
   min-height: 6.92rem;
   background-color: #131313;
@@ -1297,6 +1287,85 @@ img {
 
 .team__card__logo-foreman {
   background: #E3B873 url("../img/team/foreman-icon.svg") no-repeat center;
+}
+
+.clients__text {
+  max-width: 26rem;
+  margin: auto;
+  margin-bottom: 74px;
+  margin-top: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.428rem;
+  line-height: 2.428rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.clients__card {
+  max-width: 376px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  padding: 24px 20px;
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.clients__card-img {
+  border-radius: 50%;
+  width: 76px !important;
+  height: 76px;
+}
+
+.clients__card-tittle {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  font-family: Yeseva One, sans-serif;
+  font-size: 1.285rem;
+  line-height: 1.64rem;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 24px;
+}
+
+.clients__card-text {
+  font-size: 1.07rem;
+  line-height: 180%;
+  color: #959595;
+}
+
+.clients__card__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 54px;
+  padding: 16px 0px;
+  margin-bottom: -27px;
+  background-color: #E3B873;
+}
+
+.clients__card__info-text {
+  font-family: 'Yeseva One' , sans-serif;
+  font-size: 1.214rem;
+  line-height: 1.714rem;
+  color: white;
+  padding: 1rem;
+  padding-left: 47px;
+  margin-left: 15px;
+  background: url(../img/clients/metr.png) no-repeat left;
+}
+
+.clients__card__info-text:nth-child(1) {
+  background: url(../img/clients/calendar.png) no-repeat left;
+  padding-right: 20px;
+  border-right: 1px solid white;
 }
 
 .footer {
