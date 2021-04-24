@@ -19,6 +19,9 @@ $(document).ready(function () {
             modal.toggleClass('modal--visible');
         }
     });
+
+    // slider
+
     const swiper = new Swiper('.swiper-container', {
   loop: true,
   pagination: {
@@ -38,9 +41,9 @@ $(document).ready(function () {
   var bullets = $('.swiper-pagination');
   next.css('left',prev.width() + 15 + bullets.width() + 15)
   bullets.css('left', prev.width() + 15)
-  
 
 
+  // WOW
   new WOW().init();
 
   // Валидация
