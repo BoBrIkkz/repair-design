@@ -527,7 +527,7 @@ img {
 }
 
 .section-tittle {
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', sans-serif;
@@ -672,6 +672,14 @@ img {
   }
   html .tittle {
     font-size: 1.64rem;
+    margin-top: 10rem;
+  }
+  html .control {
+    color: white;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
+  }
+  html .control__text {
+    text-align: center;
   }
   html .control__button {
     width: 100%;
@@ -684,6 +692,7 @@ img {
     height: 14.7rem;
   }
   html .control__policy {
+    padding-bottom: 6.5rem;
     margin-top: -11rem;
   }
   html .control__policy--label {
@@ -691,22 +700,50 @@ img {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  html .control__input {
+    color: white;
+  }
   html .control__input--name {
     width: 100%;
     margin-bottom: 4rem;
   }
   html .control__input--last-name {
-    margin-bottom: 9rem;
+    margin-bottom: 8rem;
     width: 100%;
   }
   html .control__form {
     display: block;
+  }
+  html .design {
+    color: white;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
+    margin-bottom: 0;
   }
   html .design__card {
     margin-bottom: 150px;
   }
   html .design__card:last-child {
     margin-bottom: 0px;
+  }
+  html .card__tittle {
+    color: black;
+  }
+  html .work {
+    display: none;
+  }
+  html .team {
+    color: white;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
+  }
+  html .team__card-tittle {
+    color: black;
+  }
+  html .clients {
+    display: none;
+  }
+  html .footer {
+    padding-top: 0;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
   }
   html .footer__map {
     max-height: 300px;
@@ -1156,7 +1193,7 @@ img {
 }
 
 .design {
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .design__text {
@@ -1377,6 +1414,10 @@ img {
   margin-bottom: 3.071rem;
 }
 
+.swiper-button-next-right {
+  margin-left: 50px;
+}
+
 .clients {
   padding-bottom: 20rem;
 }
@@ -1436,7 +1477,8 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 54px;
   padding: 16px 0px;
   margin-bottom: -27px;
@@ -1462,7 +1504,8 @@ img {
 
 .footer {
   padding-top: 15rem;
-  background: url("../img/footer-bg.jpg") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(24, 24, 24, 0.8)), to(rgba(24, 24, 24, 0.4))), url("../img/footer-bg.jpg") no-repeat center/cover;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.8) 1%, rgba(24, 24, 24, 0.4) 100%), url("../img/footer-bg.jpg") no-repeat center/cover;
 }
 
 .footer-wrap {
