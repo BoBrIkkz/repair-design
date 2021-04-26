@@ -450,6 +450,35 @@ template {
           justify-content: center;
 }
 
+.scrollup {
+  z-index: 555555555555555;
+  position: fixed;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 15px;
+  bottom: 25px;
+}
+
+.scrollup::after {
+  content: '';
+  background: #131313 url(../img/arrow-down.svg) no-repeat center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 12px;
+}
+
 label.invalid {
   color: tomato;
 }
@@ -753,6 +782,18 @@ img {
     padding-top: 0;
     background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
   }
+  html .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  html .footer-wrap {
+    background: transparent;
+  }
+  html .footer-wrap--mobile {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 0px;
+  }
   html .footer__map {
     max-height: 300px;
   }
@@ -1052,6 +1093,11 @@ img {
   background: url("../img/arrow-next.svg") no-repeat;
 }
 
+.control {
+  position: relative;
+  z-index: 9999999;
+}
+
 .control__section-tittle {
   margin-bottom: 2.214rem;
   margin-top: -32rem;
@@ -1156,7 +1202,19 @@ img {
 
 .video__play {
   position: relative;
+  cursor: pointer;
   margin: auto;
+  background: #E3B873 url("/img/control/play-icon.svg") center no-repeat;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.video__play:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
 
 .types__section-tittle {
@@ -1535,6 +1593,11 @@ img {
   margin-bottom: -36rem;
   position: relative;
   color: white;
+}
+
+.footer-wrap--mobile {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .footer__tittle {

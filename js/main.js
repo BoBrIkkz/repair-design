@@ -115,6 +115,62 @@ $(document).ready(function () {
   $('[type=tel]').mask("+7 (000) 000-00-00", {placeholder: "+7 (999) 888-77-66"});
 
 
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [47.244716, 39.723186],
+            zoom: 18,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
 
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Наш офис'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/map-marker.png',
+            // Размеры метки.
+            iconImageSize: [24, 24]
+
+        })
+    myMap.geoObjects
+        .add(myPlacemark);
+});
+    // при прокрутке окна (window)
+    $('.scrollup').fadeOut();
+    $(window).scroll(function() {
+      // если пользователь прокрутил страницу более чем на 200px
+      if ($(this).scrollTop()>500) {
+        // то сделать кнопку scrollup видимой
+        $('.scrollup').fadeIn();
+      }
+      // иначе скрыть кнопку scrollup
+      else {
+        $('.scrollup').fadeOut();
+      }
+    });
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: '0ly25OYC45M',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 
 });

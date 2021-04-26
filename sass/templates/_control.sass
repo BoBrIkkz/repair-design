@@ -1,4 +1,6 @@
 .control
+  position: relative
+  z-index: 9999999
   &__section-tittle
     margin-bottom: 2.214rem
     margin-top: -32rem
@@ -64,4 +66,12 @@
 .video
   &__play
     position: relative
+    cursor: pointer
     margin: auto
+    background: $primary url('/img/control/play-icon.svg') center no-repeat
+    width: 85px
+    height: 85px
+    border-radius: 50%
+    &:hover
+      transition: 0.4s
+      box-shadow: 0px 5px 15px rgba($primary, 0.2)
