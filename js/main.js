@@ -3,12 +3,16 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle=modal]'),
       modalSuc = $('.modal__succsess'),
       closeBtn = $('.modal__close');
+      closeSuc = $('.modal__succsess__button');
 
   modalBtn.on('click', function() {
     modal.toggleClass('modal--visible');
   });
   closeBtn.on('click', function() {
-    modal.toggleClass('modal--visible');
+    modal.removeClass('modal--visible');
+  });
+    closeSuc.on('click', function() {
+    modalSuc.removeClass('modal__succsess--visible');
   });
       $(document).keyup(function (event) {
         if (event.key === "Escape") {
@@ -17,7 +21,17 @@ $(document).ready(function () {
     });
     $(document).click(function (event) {
         if ($(event.target).is('.modal')) {
-            modal.toggleClass('modal--visible');
+            modal.removeClass('modal--visible');
+        }
+    });
+          $(document).keyup(function (event) {
+        if (event.key === "Escape") {
+            modalSuc.removeClass('modal__succsess--visible');
+        }
+    });
+    $(document).click(function (event) {
+        if ($(event.target).is('.modal__succsess')) {
+            modalSuc.removeClass('modal__succsess--visible');
         }
     });
 
@@ -87,31 +101,14 @@ $(document).ready(function () {
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          console.log('Ajax сработал. Всё ' + response)
           $(form)[0].reset();
           modal.removeClass('modal--visible');
-          alert('Я не доделал((, но письмо отправлено')
-          //modalSuc.toggleClass('modal--visible');
-          //setTimeout(function(i){$(modalSuc).removeClass('modal--visible');}, 10000);
+          modalSuc.toggleClass('modal__succsess--visible');
           }
       });
   }
   });
 
-  var button = $('#button-up');	
-  $(window).scroll (function () {
-    if ($(this).scrollTop () > 300) {
-      button.fadeIn();
-    } else {
-      button.fadeOut();
-    }
-});	 
-button.on('click', function(){
-$('body, html').animate({
-scrollTop: 0
-}, 800);
-return false;
-});		 
 
 
   // Маски

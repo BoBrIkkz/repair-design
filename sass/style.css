@@ -1684,6 +1684,19 @@ img {
           justify-content: center;
 }
 
+.modal__succsess__button {
+  width: 100%;
+  max-width: 500px;
+  height: 3.64rem;
+  font-family: 'Futura Demi', sans-serif;
+  font-size: 1.2rem;
+}
+
+.modal__succsess--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal__dialog {
   position: relative;
   max-width: 36.36rem;
