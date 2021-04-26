@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
+      modalSuc = $('.modal__succsess'),
       closeBtn = $('.modal__close');
 
   modalBtn.on('click', function() {
@@ -79,8 +80,39 @@ $(document).ready(function () {
       required: "Заполните поле",
       email: "Введите корректный Email"
     }
+  },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Всё ' + response)
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          alert('Я не доделал((, но письмо отправлено')
+          //modalSuc.toggleClass('modal--visible');
+          //setTimeout(function(i){$(modalSuc).removeClass('modal--visible');}, 10000);
+          }
+      });
   }
   });
+
+  var button = $('#button-up');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 300) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+});	 
+button.on('click', function(){
+$('body, html').animate({
+scrollTop: 0
+}, 800);
+return false;
+});		 
+
 
   // Маски
   $('[type=tel]').mask("+7 (000) 000-00-00", {placeholder: "+7 (999) 888-77-66"});

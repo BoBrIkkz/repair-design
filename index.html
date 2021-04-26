@@ -11,20 +11,25 @@
   <title>Repair Design Studio</title>
 </head>
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script
+    > (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(76524874, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });</script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/76524874" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
-
     <div class="container">
       <div class="menu">
         <div class="logo menu__logo">Repair Design Project</div>
         <nav class="nav menu__nav">
           <a href="#" class="nav__item nav__item--primary">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#projects" class="nav__item">Проекты</a>
+          <a href="#sample" class="nav__item">Замер</a>
+          <a href="#team" class="nav__item">Команда</a>
+          <a href="#clients" class="nav__item">Отзывы</a>
+          <a href="#footer" class="nav__item">Контакты</a>
         </nav>
-        <div class="contacts menu__contacts" data-wow-delay="1s">
+        <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
           <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
         </div>
@@ -46,18 +51,17 @@
                   материалов за счет организации работы</p>
                 <div class="hero__buttons">
                   <button class="button hero__button button--primary wow animate__animated animate__fadeInRight" data-wow-delay="0.9s">Рассчитать стоимость</button>
-                  <button class="button hero__button button--outline wow animate__animated animate__fadeInRight" data-wow-delay="0.9s">Отправить заявку</button>
+                  <button class="button hero__button button--outline wow animate__animated animate__fadeInRight" data-wow-delay="0.9s" data-toggle="modal">Отправить заявку</button>
                 </div>
       </div>
 
     </div>
         <!-- /.hero__content -->
-        <a href="#" class="hero__scroll-down">Листайте вниз</a>
+        <a href="#footer" class="hero__scroll-down">Листайте вниз</a>
 
     </section>
     <!-- /.hero -->
-
-      <section class="section section--dark projects">
+      <section id="projects" class="section section--dark projects">
           <div class="container">
             <div class="row">
               <div class="col-50">
@@ -316,7 +320,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section types -->
-    <section class="section design">
+    <section id="sample" class="section design">
       <div class="container">
         <div class="section-tittle design__section-tittle">
           <h2 class="section-tittle__heading">Дизайн проект</h2>
@@ -586,7 +590,7 @@
           <!-- /.container -->
         </section>
         <!-- /.section work -->
-    <section class="section team">
+    <section id="team" class="section team section__team">
     <div class="container">
       <div class="section-tittle design__section-tittle">
         <h2 class="section-tittle__heading">Наша команда</h2>
@@ -640,7 +644,7 @@
     <!-- /.container -->
     </section>
     <!-- /.section team -->
-    <div class="section section clients">
+    <div id="clients" class="section section clients">
       <div class="container">
         <div class="section-tittle design__section-tittle">
           <h2 class="section-tittle__heading">Наши клиенты</h2>
@@ -737,7 +741,7 @@
     <!-- /.section section clients -->
   </main>
 
-<footer class="footer section section--dark">
+<footer id="footer" class="footer section section--dark">
   <div class="container">
       <div class="section-tittle footer__section-tittle">
             <h2 class="section-tittle__heading footer__section-tittle__heading section-tittle__heading--primary">Ростов на дону Торговый центр Plaza Прямой телефон<a href="tel:+79997683299" class="section-tittle__heading--tel"> +7&nbsp;(999)&nbsp;768&nbsp;32&nbsp;99</a></h2>
@@ -813,6 +817,7 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/wow.min.js"></script>

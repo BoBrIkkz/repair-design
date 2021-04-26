@@ -24,7 +24,7 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('FiilatovRDS@gmail.com');
+    $mail->setFrom('FiilatovRDS@gmail.com', 'New request');
     $mail->addAddress('arsusha202@gmail.com');     // Add a recipient
 
     // Content
@@ -32,8 +32,12 @@ try {
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${modalUserName}, Телефон: ${modalUserPhone}. Почта: ${modalUserEmail}";
 
-    $mail->send();
-    header('Location: thanks.html');    
+    if ($mail->send()) {
+        echo "ok";
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+        
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

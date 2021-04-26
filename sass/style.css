@@ -510,6 +510,7 @@ input.invalid {
 
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -717,7 +718,7 @@ img {
   html .design {
     color: white;
     background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
-    margin-bottom: 0;
+    padding-bottom: 28rem;
   }
   html .design__card {
     margin-bottom: 150px;
@@ -1208,6 +1209,11 @@ img {
   margin-bottom: 40px;
 }
 
+.team {
+  margin-top: -35rem;
+  color: white;
+}
+
 .team__text {
   max-width: 32rem;
   margin: auto;
@@ -1226,6 +1232,7 @@ img {
   margin-top: 110px;
   max-width: 40.6rem;
   text-align: center;
+  color: black;
 }
 
 .team__text-second::before {
@@ -1258,6 +1265,7 @@ img {
   line-height: 1.78rem;
   margin-bottom: 0.5rem;
   margin-top: 1.57rem;
+  color: black;
 }
 
 .team__card-item {
@@ -1651,6 +1659,29 @@ img {
 .modal--visible {
   opacity: 1;
   visibility: visible;
+}
+
+.modal__succsess {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 111;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal__dialog {
