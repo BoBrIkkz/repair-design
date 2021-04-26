@@ -78,7 +78,7 @@ $(document).ready(function () {
     modalUserEmail: {
       required: true,
       email: true
-    }
+    },
   },
   messages: {
     modalUserName: {
