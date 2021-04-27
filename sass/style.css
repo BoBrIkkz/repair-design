@@ -469,7 +469,7 @@ template {
 
 .scrollup::after {
   content: '';
-  background: #131313 url(../img/arrow-down.svg) no-repeat center;
+  background: #131313 url(../img/Arrow-down.svg) no-repeat center;
   width: 30px;
   height: 30px;
   border: 2px solid #E3B873;
@@ -1204,7 +1204,7 @@ img {
   position: relative;
   cursor: pointer;
   margin: auto;
-  background: #E3B873 url("/img/control/play-icon.svg") center no-repeat;
+  background: #E3B873 url("../img/control/play-icon.svg") center no-repeat;
   width: 85px;
   height: 85px;
   border-radius: 50%;
